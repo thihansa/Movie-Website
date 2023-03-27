@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Images</title>
+		<link rel ="stylesheet" href="st4style.css">
+		<link rel ="stylesheet" href="common-style.css">
+		
+	</head>
+	<style>
+		
+			
+</style>
+
+	
+<body>
+	<a href="../Student_2/MainPage.html">
+	<img src="logo.png" alt="Logo" style="width: 140px; height:140px;";></a>
+	
+	
+	
+	<!--navigation bar-->
+	<div class="nav">
+		
+		<a href="../Student_2/Form.html"><img src="images/feedback.png" alt= "Feedback"> FeedBack</a>
+		<a href="Sitemap.html"><img src="images/map.png" alt= "Sitemap"> SiteMap</a>
+		<a href="../Student_3/aboutus.html"><img src="images/stu_detail.png" alt= "Aboutus"> About US</a>
+		<a href="../Student_3/Quiz.html"><img src="images/quiz.png" alt= "Quiz"> Quiz</a>
+		<a href="Images.html"><img src="images/image.png" alt= "Images"> Gallery</a>
+		<a href="../Student_1/Selecting_Movies.html"><img src="images/product.png" alt= "Product"> Products</a>
+		<a href="../Student_2/MainPage.html"><img src="images/home.png" alt= "Main"> Home</a>
+	</div>
+	
+	<br>
+	<br>
+
+		<form >
+			
+				Choose Background Colour:
+				<select id="Backgroundcolour" onchange="colourfunction()">
+					<option value="White">White</option>
+					<option value="Red">Red</option>
+					<option value="Pink ">Pink  </option>
+					<option value="Blue">Blue</option>
+					<option value="Violet">Violet </option>
+					<option value="Black">Black</option>
+				</select>
+			
+		 
+		<script>
+			<!--JavaScript background color change-->
+			function colourfunction() {
+                        var select2 = document.getElementById('Backgroundcolour').value;
+                        if (select2 == "White") {
+                            document.body.style.backgroundColor = "White";
+                        }
+                        if (select2 == "Red") {
+                            document.body.style.backgroundColor = "Red";
+                        }
+                        if (select2 == "Pink  ") {
+                            document.body.style.backgroundColor = "Pink  ";
+                        }
+                        if (select2 == "Blue") {
+                            document.body.style.backgroundColor = "Blue";
+                        }
+                        if (select2 == "Violet ") {
+                            document.body.style.backgroundColor = "Violet ";
+                        }
+                        if (select2 == "Black") {
+                            document.body.style.backgroundColor = "Black";
+                        }
+                    }
+
+		</script>
+		<br>
+                Choose Text Colour:
+                <select id="Textcolour" onchange="txfunction()">
+					<option value="White">White</option>
+					<option value="Red">Red</option>
+					<option value="Pink">Pink</option>
+					<option value="Blue">Blue</option>
+					<option value="Violet">Violet</option>
+					<option value="Black">Black</option>
+				</select>
+           
+        <script>
+			<!--JavaScript for text color change-->
+            function txfunction() {
+                        var select1 = document.getElementById('Textcolour').value;
+                        if (select1 == "White") {
+                            document.body.style.color = "White";
+                        }
+                        if (select1 == "Red") {
+                            document.body.style.color = "Red";
+                        }
+                        if (select1 == "Pink") {
+                            document.body.style.color = "Pink";
+                        }
+                        if (select1 == "Blue") {
+                            document.body.style.color = "Blue";
+                        }
+                        if (select1 == "Violet") {
+                            document.body.style.color = "Violet";
+                        }
+                        
+						if (select1 == "Black") {
+                            document.body.style.color = "Black";
+                        }
+                    }
+
+        </script>	
+		</form>
+		
+		
+		<br>
+		<br>
+		<div class="images">
+				
+				<div class="column">
+					<img onmouseover="big(this)" onmouseout="normal(this)"	width="150" height="200"
+					src="fro2.jpg" alt="Frozen is an american fantasy film produced by walt disney animation studios. It is the 58th animated film produced.
+					The film is directed by Chris Buck and Jennifer Lee with a screenplay by Jennifer Lee. A story from Chris Buck,
+					Jennifer Lee Marc E, Smith, Kristen Anderson-Lopez, Robert Lopez. Starring ,Kristen Bell, Idina Menzel, Josh Gad and Jonathan Groff." 
+					onclick="Click(this);">
+				</div>
+				<br>
+				<br>
+				
+				<div class="column">
+					<img src="evil.jpeg"   onmouseover="big(this)" onmouseout="normal(this)"	width="150" height="200"
+					alt="Maleficent:Mistress Of Evil is an american dark fantasy adventure film produced by walt disney pictures. 
+					The film is directed by Joachim Rønning. A story based on characters from: Disney's Sleeping Beauty, La Belle au bois dormant by Charles Perrault. 
+					Starring Angelina Jolie, Elle Fanning, Chiwetel Ejiofor, Sam Riley, Ed Skrein, Imelda Staunton, Juno Temple, Lesley Manville and Michelle Pfeiffer.
+					The film was awarded with an Academy Award nomination at the 92nd Academy Awards for Best Makeup and Hairstyling." 
+					 onclick="Click(this);">
+				</div>
+				<br>
+				<br>
+				
+				<div class="column">
+					<img src="end.jpeg"  onmouseover="big(this)" onmouseout="normal(this)"	width="150" height="200"
+					alt="Avengers Endgame is an 2019 American superhero film based on Marvel comics. It is produced by Marvel Studios.
+					The film is directed by Anthony Russo, Joe Russo with a screenplay Christopher Markus, Stephen McFeely.
+					Starring Robert Downey Jr, Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renne, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan
+					Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow and Josh Brolin. 
+					The film received numerous awards and nominations for Best Visual Effects at the 92nd Academy Awards, 
+					three nominations, at the 25th Critics' Choice Awards and a nomination for Special Visual Effects at the 73rd British Academy Film Awards." 
+					onclick="Click(this);">
+				</div>
+				<br>
+				<br>
+				
+				<div class="column">
+					<img src="ai.jpg"  onmouseover="big(this)" onmouseout="normal(this)"	width="150" height="200"
+					alt="Airaa is a 2019 Indian tamil horror film written and directed by KM Sarjun with a screenplay by Priyanka Ravindran. 
+					The film is produced by Kotapadi J Rajesh under KJR Studios
+					Starring Nayanthara, Kalaiyarasan and Yogi Babu." 
+					style="width:53%" onclick="Click(this);">
+				</div>
+				<br>
+				<br>
+				
+				<div class="column">
+					<img src="dab.jpg"  onmouseover="big(this)" onmouseout="normal(this)"	width="150" height="200"
+					alt="Dabar is a 2020 Indian tamil action thriller film directed by A. R. Murugadoss with a screenplay by AR Murugadoss. Starring Rajinikanth, Nayanthara, Nivetha Thomas
+					and Sunil Shetty." 
+					onclick="Click(this);">
+				</div>
+				<br>
+				<br>
+				
+		</div>
+		<!--image hover-->
+		<script>
+				function big(x) {
+				x.style.height = "250px";
+				x.style.width = "200px";
+				}
+
+				function normal(x) {
+				x.style.height = "200px";
+				x.style.width = "150px";
+				}
+		</script>
+	
+	
+		<br>
+		<br>
+		<div class="imgcontainer">
+                    <span onclick="this.parentElement.style.display='none'" class="closebutton">&times;</span>
+                    <img id="expandedImage" style="width:25%">
+                    <div id="text"></div>
+        </div>
+
+                <!--JavaScript for image view-->
+                <script>
+                    function Click(imgs) {
+                        var expand = document.getElementById("expandedImage");
+                        var Text = document.getElementById("text");
+                        expand.src = imgs.src;
+                        Text.innerHTML = imgs.alt;
+                        expand.parentElement.style.display = "block";
+                    }
+
+                </script>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>			
+	<footer >
+				<a href = "#top">Back to Top</a>
+				<address><b>Copyrights © 2020 All Rights Reserved.   Page Editor: </b><a href="Page.editor.thihansa.html">Thihansa Mudalige</a></address><br>
+				<a href = "partB.html">Individual Page-Part B</a>
+			</footer>
+			
+			
+		
+</body>
+</html>			
+		
