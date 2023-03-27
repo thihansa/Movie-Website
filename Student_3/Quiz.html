@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>REEL>LK | QUIZ</title>
+    <link rel="stylesheet" href="Quiz.css">
+	<link rel ="stylesheet" href="common-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  </head>
+
+  <body background="background.jpeg" style= "background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;">
+
+	
+    
+	
+	<div class="nav">
+		<h1 style="color:white"><img src="logo1.png" ; style="align:center";></h1>
+		<a href="../Student_2/Form.html"><img src="images/feedback.png"> FeedBack</a>
+		<a href="../Student_4/Sitemap.html"><img src="images/map.png"> SiteMap</a>
+		<a href="aboutus.html"><img src="images/stu_detail.png"> About US</a>
+		<a href="Quiz.html"><img src="images/quiz.png"> Quiz</a>
+		<a href="../Student_4/Images.html"><img src="images/image.png"> Gallery</a>
+		<a href="../Student_1/Selecting_Movies.html"><img src="images/product.png"> Products</a>
+		<a href="../Student_2/MainPage.html"><img src="images/home.png"> Home</a>
+	</div>
+	
+	
+	
+	<h1>REEL.LK</h1>
+	
+	
+    <div id="container">
+      <div id="start">Start Quiz!</div>
+      <div id="quiz" style="display:none">
+        <div id="question"></div>
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <hr style="margin-top:50px">
+        <div id="timer">
+          <div id="counter"></div>
+          <div id="btimeGauge"></div>
+          <div id="timeGauge"></div>
+        </div>
+        <div id="progress"></div>
+      </div>
+      <div id="scores" style="display:none">
+        <div id="numQuestions"></div>
+      </div>
+    </div>
+    <script src="Quiz.js"></script>
+    
+      <div id="footer">
+
+        <h2>Copyright © 2020 All Rights Reserved.<a href= "Quiz.html ">Page Editor:Burhanuddin Kutubdeen - 2018626</a></h2>
+      </div>
+    </a>
+  </body>
+
+</html>
