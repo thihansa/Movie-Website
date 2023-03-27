@@ -1,0 +1,108 @@
+body {
+    background-image:url(a.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;}
+}
+
+h1 {
+	font-family: "Times New Roman", Times, serif ;
+	letter-spacing: 5px;
+	font-stretch: expanded;
+	font-size: 32px;
+	text-shadow: 1px 1px black;
+	color : #0300ad;
+}
+
+button {
+	background-color : #000000;
+	color : #ffffff
+}
+
+img {
+  transition: transform .1s;
+  cursor : pointer;
+}
+
+img:hover {
+  transform: scale(1.4);
+}
+
+#myBtn {
+	display : none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	font-size: 20px;
+	border: none;
+	background-color: #a0a3a0;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+}
+
+#myBtn:hover {
+  background-color: #ed0707;
+}
+
+.upcoming-movie-grid-container {
+	margin-left : 170px;
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows : 300px 300px 300px;
+}
+.comedy-movie-grid-containers {
+	margin-left : 70px;
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px ;
+	grid-template-rows : 300px  ;
+	padding: 10px;
+}
+
+.latest-movie-grid-containers {
+	margin-left : 70px;
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px;
+	grid-template-rows : 300px;
+	padding: 10px;
+}
+
+.grid-item {
+  background-color : #6d706f;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer{
+    background-color: lightgrey;
+    width: 1320px;
+	height: 50px;
+    opacity: 0.8;
+	border-radius: 20px;
+	padding: 10px;
+}
+.top{
+	float: right;
+}
+
+.home{
+    float: left;
+    border-radius: 25px 6px ;
+    list-style-type: none;
+    margin-top: -9px;
+}
+
+.home a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+    border-radius: 50px 11px ;
+    width: auto;
+}
+
+.home a:hover{
+    background-color: #205B5A;
+}

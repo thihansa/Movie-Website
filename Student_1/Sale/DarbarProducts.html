@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MovieStore</title>
+	<link rel="stylesheet" href="products.css" type="text/css">
+</head>
+
+<body>
+	<div class="header3"></div>
+        <div class="header">	<img class="logo" src = "logo.jpg">		<div class="headTitle">Movie Store</div>
+    </div>
+
+        <div id="div1" class="header2">
+            <div class="movieName">Darbar Movie Products</div>
+				<div class="fontChange">
+					<button class="button" type="button" onclick="increase()" style="height: 40px; width: 30px;">+</button>
+					<button class="button" type="button" onclick="normal()" style="height: 40px; width: 80px;">Default</button>
+					<button class="button" type="button" onclick="decrease()" style="height: 40px; width: 30px;">-</button>
+				</div>
+		</div>
+<br>
+
+        <form class="formStyle">
+            Name    <input id="textName" type="text" placeholder="i.e: Alex"> <br>
+            Email   <input id="textEmail" type="text" placeholder="i.e: name@mail.com"> <br>
+            Telephone Number    
+            <input id="textTP" type="text" placeholder="i.e: 07x xxx xxxx"> <br>
+
+            <button class="button" type="button" onclick="displayMessage()">Submit</button>
+        </form>
+
+
+        <div class="productContainer">
+            <div class="productImage">
+                <img src="products/darbar_t-shirt.jpg" alt= "DarbarT-Shirt">
+            </div>
+            <div class="productHeader">T-shirts</div>
+            <div class="productDetail">
+                <table>
+                    <tr>    <th>Item No</th>    <td>1</td>     </tr>
+					
+                    <tr>    <th>Size</th>    <td>	<input type="radio" id="size" name = "Size" onclick="myFunction(this.value)" value="Small"> <label for="Small">Small</label>
+													<input type="radio" id="size" name = "Size" onclick="myFunction(this.value)" value="Medium"> <label for="Medium">Medium</label>
+													<input type="radio" id="size" name = "Size" onclick="myFunction(this.value)" value="Large"> <label for="Large">Large</label></td>    </tr>
+                    
+					<tr>    <th>Price</th>    <td>Rs. 1090.00</td>     </tr>
+                </table>
+            </div>
+            <div class="productQuantity">
+                <table>  <tr> <th>Number of quantity</th>  </tr>  </table>
+           </div>
+
+            <div class="productInput">
+                <input id="textQty1" type="text" style="margin-top:1px; border: 2px solid green;" placeholder="i.e: 1" value="0">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="productContainer">
+            <div class="productImage2">
+                <img src="images/darbar.jpg" alt= "DarbarPoster">
+            </div>
+            <div class="productHeader">Posters</div>
+            <div class="productDetail">
+                <table>
+                    <tr>    <th>Item No</th>    <td>2</td>     </tr>
+                    <tr>    <th>Price</th>    <td>Rs. 100.00</td>     </tr>
+                </table>
+            </div>
+            <div class="productQuantity">
+                <table> <tr>  <th>Number of quantity</th>  </tr>    </table>
+           </div>
+
+            <div class="productInput">
+                <input id="textQty2" type="text" style="margin-top:1px; border: 2px solid green;" placeholder="i.e: 1" value="0">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="productContainer">
+            <div class="productImage2">
+                <img src="products/darbar_cd.jpg" alt= "DarbarCD">
+            </div>
+            <div class="productHeader">DVD</div>
+            <div class="productDetail">
+                <table>
+                    <tr>    <th>Item No</th>    <td>3</td>     </tr>
+                    <tr>    <th>DVD Type</th>    <td>BluRay</td>     </tr>
+                    <tr>    <th>Price</th>    <td>Rs. 1300.00</td>     </tr>
+                </table>
+            </div>
+
+            <div class="productQuantity">
+                <table> <tr>  <th>Number of quantity</th>  </tr>    </table>
+           </div>
+            <div class="productInput">
+                <input id="textQty3" type="text" style="margin-top:1px; border: 2px solid green;" placeholder="i.e: 1" value="0">
+            </div>
+        </div>
+
+        <br><br>
+
+        <footer>
+			<a class = "top" href = "#top">Back to Top</a>
+            <address class="home">	<b> Copyrights @2020 All Rights Reserved. 	<a href="../details.html"> Site creater - Kritheesh Kumar </a></address>
+            <div class="gallery1"></div>
+            <div class="gallery2"></div>
+            <div class="gallery3"></div>
+		</footer>
+		
+		<h3 id="text2">Follow us on :</h3>
+		<h3 id="text3">Reel.Lk / insta</h3>
+		<h3 id="text4">Reel.lk / fb.com</h3>
+		<h3 id="text5">@Reel.LK / twi </h3>
+               
+     <div class="footer3"></div>
+        
+    </body>
+
+
+    <script>
+        function displayMessage() {
+
+            var total = 0;
+            var purchase = "";
+            var name = document.getElementById("textName").value;
+            var email = document.getElementById("textEmail").value;
+            var TPno = document.getElementById("textTP").value;
+			
+			var small = document.getElementById("size").value;
+
+            var qty1 = document.getElementById("textQty1").value;
+            var price1 = 1090;
+            var qty2 = document.getElementById("textQty2").value;
+            var price2 = 100;
+            var qty3 = document.getElementById("textQty3").value;
+            var price3 = 1300;
+
+            var check = 0;
+            if (name != ""){
+                if (email != ""){
+                    if (TPno != ""){
+                        if (qty1 > 0){
+                            total = total + (price1 * qty1);
+                            purchase = purchase + " T-shirts	" + qty1 + " * " + price1 + " = " + (price1 * qty1) + "\n";
+                        }
+                        if (qty2 > 0){
+                            total = total + (price2 * qty2);
+                            purchase = purchase + "Posters	" + qty2 + " * " + price2 + " = " + (price2 * qty2) + "\n";
+                        }
+                        if (qty3 > 0){
+                            total = total + (price3 * qty3);
+                            purchase = purchase + "DVD	" + qty3 + " * " + price3 + " = " + (price3 * qty3) + "\n";
+                        }
+						
+						if (document.getElementById("size").check == true){
+						check++
+						}
+
+                        receipt(name, purchase, total, email, small);
+				
+                    }else{
+                        check++ ;
+                        alert("T- Phone number expected!");
+                    }
+                }else{
+                    check++ ;
+                    alert("E- mail expected!");
+                }
+            }else{
+                check++ ;
+                alert("Name expected!")
+            }
+
+            if(check == 0){
+                emptyTextFields();
+            }
+        }
+		
+		function myFunction(Size) {
+  document.getElementById("size").value = Size;
+}
+
+        function receipt(name, purchase, total, email, small){
+            alert(
+                "Hi " + name + ", \n" + "You have purchased:\n\n" + small+
+                purchase + "\n" +
+                "Total : " + total +"\n\n" +
+                "Conformation receipt will be sent to : " + email
+            );
+        }
+
+        function emptyTextFields(){
+            document.getElementById("textName").value = "";
+            document.getElementById("textTP").value = "";
+            document.getElementById("textEmail").value = "";
+            document.getElementById("textQty1").value = "0";
+            document.getElementById("textQty2").value = "0";
+        }
+
+         function increase(){
+            document.getElementsByClassName("movieName")[0].style.fontSize='60px';
+            document.getElementsByClassName("formStyle")[0].style.fontSize='45px';
+
+            document.getElementsByClassName("productDetail")[0].style.fontSize='45px';
+            document.getElementsByClassName("productDetail")[1].style.fontSize='45px';
+            document.getElementsByClassName("productDetail")[2].style.fontSize='45px';
+
+            document.getElementsByClassName("productQuantity")[0].style.fontSize='45px';
+            document.getElementsByClassName("productQuantity")[1].style.fontSize='45px';
+            document.getElementsByClassName("productQuantity")[2].style.fontSize='45px';
+
+            document.getElementsByClassName("productHeader")[0].style.fontSize='60px';
+            document.getElementsByClassName("productHeader")[1].style.fontSize='60px';
+            document.getElementsByClassName("productHeader")[3].style.fontSize='60px';
+        }
+
+        function normal(){
+            document.getElementsByClassName("movieName")[0].style.fontSize='42px';
+            document.getElementsByClassName("formStyle")[0].style.fontSize='25px';
+
+            document.getElementsByClassName("productDetail")[0].style.fontSize='32px';
+            document.getElementsByClassName("productDetail")[1].style.fontSize='32px';
+            document.getElementsByClassName("productDetail")[2].style.fontSize='32px';
+
+            document.getElementsByClassName("productQuantity")[0].style.fontSize='32px';
+            document.getElementsByClassName("productQuantity")[1].style.fontSize='32px';
+            document.getElementsByClassName("productQuantity")[2].style.fontSize='32px';
+
+            document.getElementsByClassName("productHeader")[0].style.fontSize='42px';
+            document.getElementsByClassName("productHeader")[1].style.fontSize='42px';
+            document.getElementsByClassName("productHeader")[2].style.fontSize='42px';
+        }
+
+        function decrease(){
+            document.getElementsByClassName("movieName")[0].style.fontSize='25px';
+            document.getElementsByClassName("formStyle")[0].style.fontSize='15px';
+
+            document.getElementsByClassName("productDetail")[0].style.fontSize='15px';
+            document.getElementsByClassName("productDetail")[1].style.fontSize='15px';
+            document.getElementsByClassName("productDetail")[2].style.fontSize='15px';
+
+            document.getElementsByClassName("productQuantity")[0].style.fontSize='15px';
+            document.getElementsByClassName("productQuantity")[1].style.fontSize='15px';
+            document.getElementsByClassName("productQuantity")[1].style.fontSize='15px';
+
+            document.getElementsByClassName("productHeader")[0].style.fontSize='25px';
+            document.getElementsByClassName("productHeader")[1].style.fontSize='25px';
+            document.getElementsByClassName("productHeader")[2].style.fontSize='25px';
+        }
+    </script>
+</html>

@@ -1,0 +1,157 @@
+body{
+    background-image:url(a.jpg);
+    background-size: cover;
+   
+}
+
+h3{
+font-family:Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+font-size: 25px;
+}
+
+h4{
+font-family:Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+font-size: 20px;
+margin-top: 5px;
+margin-left: 8px;
+}
+
+p{
+font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+font-size: 18px;
+margin: 10px 25px 0px 25px;
+}
+
+.container{
+width: 1003px;
+height: 790px;
+border: 2px solid #FFFFFF;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+padding: 5px 5px 5px 5px;
+}
+
+.nameHeader{
+width: 86%;
+height: 110px;
+opacity: 0.8;
+border: 2px solid #FFFFFF;
+background-color: #FFFFFF;
+}
+
+.text{
+text-align: center;
+font: normal;
+font-size: 50px;
+margin-top: 20px;
+font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+
+}
+
+.gap1{
+height: 40px;
+width: 850px;
+border: 2px solid #FFFFFF;
+margin-top: 5px;
+border-radius: 5px;
+background-color: #890204;
+opacity: 0.8;
+}
+
+.gap2{
+height: 40px;
+width: 999px;
+border: 2px solid #FFFFFF;
+margin-top: 5px;
+border-radius: 5px;
+background-color: #890204;
+opacity: 0.8;
+}
+
+.firstQuestion{
+height: 40px;
+width: 140px;
+border: 2px solid #FFFFFF;
+margin-top: -48.35%;
+margin-left: 399px;
+background-color: #FFFFFF;
+}
+
+.question{
+height: 40px;
+width: 140px;
+border: 2px solid #FFFFFF;
+margin-top: 5px;
+margin-left: 399px;
+background-color: #FFFFFF;
+}
+
+.firstAnswer{
+height: 40px;
+width: 451px;
+border: 2px solid #FFFFFF;
+margin-top: -48.4%;
+margin-left: 547px;
+background-color: #FFFFFF;
+}
+
+table{
+font-size: 25px;
+}
+
+.answer{
+height: 40px;
+width: 451px;
+border: 2px solid #FFFFFF;
+margin-top: 5px;
+margin-left: 547px;
+background-color: #FFFFFF;
+}
+
+.task{
+height: 481px;
+width: 392px;
+font-size: 24px;
+border: 2px solid #FFFFFF;
+margin-top: 5px;
+background-color: #FFFFFF;
+}
+
+.footer{
+height: 78px;
+width: 999px;
+border: 2px solid #FFFFFF;
+margin-top: 5px;
+background-color: #FFFFFF;
+text-align: center;
+}
+
+.home1{
+	float: left;
+	border-radius: 25px 6px ;
+	list-style-type: none;
+	margin-top: -75px;
+	margin-left: 1100px;
+
+	}
+	.home1 a{
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px 14px 16px;
+		text-decoration: none;
+		background-color: #000000;
+		color: #FFFFFF;
+		border-radius: 50px 11px ;
+		}
+.home1 a:hover {
+	background-color:#e8e8ff;
+	color: #000000;
+
+	}
+	a{
+	width: 100px;
+	
+	font-size: 20px
+}
